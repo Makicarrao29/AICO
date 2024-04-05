@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ACCO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+            
+			<!-- Header -->
+								<style>
+						/* Global Styles */
+						body {
+							font-family: Arial, sans-serif; /* Fallback font */
+							font-size: 16px; /* Base font size */
+							line-height: 1.5; /* Line height for better readability */
+							color: #333; /* Default text color */
+							transition: background-color 0.3s, color 0.3s;
+						}
+				
+						/* Dark Mode */
+						body.dark-mode {
+							background-color: #333; /* Dark background color */
+							color: #fff; /* Light text color for better contrast */
+						}
+				
+						/* Text Zoom */
+						.text-zoom {
+							font-size: 100%; /* Base font size */
+						}
+				
+						.text-zoom-large {
+							font-size: 120%; /* Larger font size */
+						}
+				
+						.text-zoom-small {
+							font-size: 80%; /* Smaller font size */
+						}
+				
+						/* Buttons */
+						.button {
+							padding: 10px;
+							font-size: 16px;
+							border: none;
+							border-radius: 50%; /* Make button circular */
+							cursor: pointer;
+							margin: 5px;
+							background-color: #C88141; /* Tiger orange background color */
+							color: #fff; /* Button text color */
+							width: 50px; /* Set button width */
+							height: 50px; /* Set button height */
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+				
+						/* Hover effect for buttons */
+						.button:hover {
+							background-color: #FDB813; /* Lighter orange on hover */
+						}
+					</style>
+				</head>
+				<body>
+					<!-- Dark/light mode toggle button -->
+					<div class="toggle-switch" ondblclick="toggleDarkMode()">.</button>
+						<label class="switch-label">
+						  <input type="checkbox" class="checkbox">
+						  <span class="slider"></span>
+						</label>
+
+						
+				</div>  
+					<!-- Zoom buttons -->
+					<button class="button" onclick="zoomIn()">+</button>
+					<button class="button" onclick="zoomOut()">-</button>
+					
+					<!-- Text size adjustment buttons -->
+					<button class="button" onclick="adjustTextSize('large')">Large</button>
+					<button class="button" onclick="adjustTextSize('normal')">Medium</button>
+					<button class="button" onclick="adjustTextSize('small')">Small</button>
+					
+					
+					<script>
+						// Function to zoom in
+						function zoomIn() {
+							document.body.style.zoom = "120%"; // Increase zoom level
+						}
+				
+						// Function to zoom out
+						function zoomOut() {
+							document.body.style.zoom = "80%"; // Decrease zoom level
+						}
+				
+						// Function to adjust text size
+						function adjustTextSize(size) {
+							const body = document.body;
+							if (size === 'large') {
+								body.classList.add('text-zoom-large');
+								body.classList.remove('text-zoom', 'text-zoom-small');
+							} else if (size === 'normal') {
+								body.classList.add('text-zoom');
+								body.classList.remove('text-zoom-large', 'text-zoom-small');
+							} else if (size === 'small') {
+								body.classList.add('text-zoom-small');
+								body.classList.remove('text-zoom', 'text-zoom-large');
+							}
+						}
+				
+						// Function to toggle dark mode
+						function toggleDarkMode() 
+						{
+							document.body.classList.toggle('dark-mode'); // Toggle dark div class
+						}
+					</script>
+				</body>
+				</html>
+				<div id="header">
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<image src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/433834631_456466880042570_5534872598273234609_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHLXgPTRsqOHHopOli6mrb7G8zR1KqkFvsbzNHUqqQW2U_zZjPQEH2_xrcyfZ44ZfMZz_79wXisc2oex-Iv8zN&_nc_ohc=GU7RoYKsNLIAb6ImWdN&_nc_ht=scontent-mnl1-2.xx&oh=03_AdWkJ53V4YXXGUKSy9U77G_ebVaq8V5hAMtart5gwUS5Lg&oe=6636E8A6"></image><h1><a href="index.html" id="logo">ACCO</a></h1>
+								<hr />
+								<p>Whenever your ready, click to start </p>
+							</header>
+							<footer>
+								<a href="#banner" class="button circled scrolly">Start</a>
+							</footer>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li>
+											<a href="#"> &hellip;</a>
+											<ul>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+											</ul>
+										</li>
+										<li><a href="#"></a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Text to speech</a></li>
+								<li><a href="right-sidebar.html">AI assistant</a></li>
+								
+							</ul>
+						</nav>
+
+				</div>
+				<!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>Web Application Home</title>
+					<link rel="stylesheet" href="styles.css">
+
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>Hi there!!! 👋 <h2> <h2>welcome to <strong>ACCO</strong>.</h2>
+						<p>
+							Our app is more than just an app, it's a bridge. A bridge between individuals seeking connection, understanding, and a platform to be heard. We break down the walls of isolation and replace them with open doors of accessibility. Whether you're visually impaired, hearing impaired, neurodivergent, or have mobility limitations, ACCO offers a safe and inclusive space to to connect with others.
+							<br>
+							<br>
+							<a href="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/432883422_411856368455112_8447797665705209725_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGTigJIUA-gH5jvW7oqULmnrVF9ZUcY1qatUX1lRxjWpkhjUEj9CMf10tqGOv3J5m_hzHgJ_lH88LBla7FQXPY1&_nc_ohc=NAJmgtoQpRkAb76P8IA&_nc_ht=scontent-mnl1-2.xx&oh=03_AdXW2PCXVSDm7Pt1qF9a28kWRH-9mbkOh8dazoaHQ_L4cQ&oe=6637921E"><mark>GROUP 3</mark></a>.
+							
+						</p>
+					</header>
+				</section>
+
+			<!-- Carousel -->
+				<center><section class="carousel">
+					<div class="reel">
+
+						<article>
+							<a href="#" class="image featured"><img src="https://builtin.com/cdn-cgi/image/f=auto,quality=80,width=752,height=435/https://builtin.com/sites/www.builtin.com/files/styles/byline_image/public/2023-08/ai-assistant_0.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#https://gemini.google.com/app">AI Assistant</a></h3>
+							</header>
+							<p><b>The AI assistant feature is a visual representation of a
+								 user-friendly and intelligent artificial intelligence assistant.
+								  The logo may include elements such as a digital assistant icon, 
+								  a sleek and modern design, and subtle hints of AI technology. 
+								  The logo communicates the idea of advanced technology, 
+								efficiency, and helpfulness that an AI assistant can provide to users.</b></p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8I-F6gjA5IvXqRgeV8BzQQ.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="https://neumorphism.io/#e0e0e0">Neumorphism</a></h3>
+							</header>
+							<p><b>Neumorphism is a form of minimalism characterized by 
+								a soft and light look, often using pastel colors with low contrast.
+								 Elements are usually the same color as the background, and are only distinguished by 
+								shadows and highlights surrounding the element.
+							</b>	
+						</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="https://images.hitpaw.com/topics/video-ai/10-free-text-to-speech-software-for-video-creation-1.webp" alt="" /></a>
+							<header>
+								<h3><a href="https://www.naturalreaders.com/online/">Text to speech</a></h3>
+							</header>
+							<p><b>Text-to-speech (TTS) is a type of assistive technology that reads digital text aloud. 
+								It's sometimes called “read aloud” technology. 
+								TTS can take words on a computer or other digital device and convert them into audio.
+							</b></p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*TKynO0Erdxv4iIRVXnwCIQ.png" alt="" /></a>
+							<header>
+								<h3><a href="#">Choice of light themed or dark themed</a></h3>
+							</header>
+							<p><b>Black and white themes can offer a sleek and minimalist look to any display. 
+								They can create a sophisticated and timeless aesthetic, often with a focus on high 
+								contrast and simplicity. Many people find black and white themes to be visually appealing
+								 and easy on the eyes. </b></p>
+						</article>
+
+						
+
+						
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div class="wrapper style2">
+
+					<article id="main" class="container special">
+						<a href="#" class="image featured"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/433727126_340674441812983_3895833634574638509_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFNUNMDEcX_AXbdsIpJyEDd5xkVCFU2JuXnGRUIVTYm5RGxcvXHuZqXDXnSFDDfSZ69lx9rZkFgL60p61DDlP99&_nc_ohc=FBfV25gWQvUAb7SUH0q&_nc_ht=scontent-mnl1-2.xx&oh=03_AdVNIvxxai1LAdgmUTtKfEHZtauH_bM2affMoBkEHGqA2w&oe=6636DEDE" alt="" /></a>
+						<header>
+							<h2><a href="#">What is ACCO?</a></h2>
+							<p>
+							    ACCO serves as a transformative platform that transcends traditional app functionalities.
+								 It acts as a bridge that connects people who are seeking meaningful connections, understanding, 
+								 and a space to express themselves. By breaking down the barriers of isolation, ACCO creates 
+								 an environment where individuals can engage with others, share their experiences, and feel heard and valued.
+.
+							</p>
+						</header>
+						<p><b>
+							Through its features and design, ACCO prioritizes accessibility by implementing tools and functions that cater to diverse needs. For visually impaired users, 
+							the app may offer options for screen readers, high contrast modes, and adjustable text sizes. For hearing impaired individuals, there could be support for closed captions, visual cues, or alternative communication methods.
+							 Neurodivergent users may benefit from personalized settings, calming interfaces, and communication guidelines that accommodate their unique preferences. Additionally, individuals with mobility limitations may access the app through adaptive technologies
+							  or simplified navigation structures.
+							</b>
+
+						</p>
+						
+					</article>
+
+				</div>
+
+			<!-- Features -->
+
+
+		
+				<div class="wrapper style1">
+
+					<section id="features" class="container special">
+						<header>
+							<h2>😊</h2>
+							<p>These links are connected to the websites that you can interact, chat and call other people.</p>
+						</header>
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<a href="https://www.messenger.com/t/4466146266790377/" class="image featured"><img src="https://messengernews.fb.com/wp-content/themes/messenger/images/messenger_logo_1200x630.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Messenger</a></h3>
+								</header>
+								<p>
+									A messenger app is any app that enables a private messaging function between two or more people. With more and more messenger
+									 apps popping up every day, this type of technology is 
+									quickly becoming the most popular way to send text-based messages, replacing SMS and MMS as the preference of most consumersm.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="https://web.telegram.org/a/" class="image featured"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkl9VTqmALRZPyFRyWKAD4tCLwdxDissasHuaXtzV6Cw&s" alt="" /></a>
+								<header>
+									<h3><a href="#">Telegram</a></h3>
+								</header>
+								<p>
+									Telegram is a cross-platform messaging service with enhanced encryption and privacy. Most messages feature client-to-server encryption, 
+									but Secret Chat messages have end-to-end encryption. Telegram also supports group chats and self-destructing messages as well.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="https://www.instagram.com" class="image featured"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/434641191_1003415881492099_8563269149448164833_n.png?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFx1r49_XE3a3-lwTAvpcwuIxjAv6th8YwjGMC_q2HxjMOTRhfo27odkBIL7P0sGJGtBFDoWLnCF9MdCI60zb9_&_nc_ohc=9RCgemU6vZ4Ab6IU6VR&_nc_ht=scontent-mnl1-2.xx&oh=03_AdVNW23XgVd9u_AgVKry5zMh8ZL-6rZGa3Rz_bm9-iGkKg&oe=6636DF88" alt="" /></a>
+								<header>
+									<h3><a href="#">Instagram</a></h3>
+								</header>
+								<p>
+									Instagram is a free photo and video sharing app available on iPhone and Android.
+									 People can upload photos or videos to our service and share them with their followers or with a select group of friends.
+									 They can also view, comment and like posts shared by their friends on Instagram.
+								</p>
+							</article>
+						</div>
+					</section>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+
+							<center><!-- Photos -->
+								<section class="col-4 col-12-mobile">
+									<header>
+										<h2 class="icon solid fa-camera circled"><span class="label">Group 3</span></h2>
+									</header>
+									<div class="row gtr-25">
+										<div class="col-6">
+											<a href="#" class="image fit"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/434011498_439517641871732_3979696015609143230_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHZDWEXHE0wuJD9sn_Zn_S0Nbl0jsHmEzk1uXSOweYTOQPu7uCIu7MvJXqetQ72f8OOOyv-02DOu8QN4XiRDnQm&_nc_ohc=XeTfrm1ee80Ab7_5ist&_nc_ht=scontent-mnl1-2.xx&oh=03_AdXzdHnXlRjwLYT3Qv5S_XVM4JTwn83aity4-JMpR8DrSg&oe=66377A0D" alt="" /></a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/433073656_1631271814284805_8359952231916349979_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEuAYiSVc3z5qsBLpLENUwjhvE0pxDsuiqG8TSnEOy6KnGUh9A5piNLGAK0781i-uK5qSWqC43PjvxuOsGbtuEM&_nc_ohc=3gwjpzEM1bYAb7F1RM9&_nc_ht=scontent-mnl1-2.xx&oh=03_AdX2yS8ptgOwWJGq0wrwD_o1WSuh2nackTmuXuFzbwj17Q&oe=66377168" alt="" /></a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/405048685_676272811356768_621995832223563322_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeERnXBtZwEh5vIdiLa93Gr_GtkFEjwcSD8a2QUSPBxIP0yXB1-YH1uJr1DnWqcWX0cUEnFoRjzoP5CxgEBEKsJj&_nc_ohc=z3GMW-M_pnQAb7_qyeg&_nc_ht=scontent-mnl1-2.xx&oh=03_AdVC4oftz_aMBVZzzlIMrTLItzeGb2ig-nhpr2Ltp8r_9A&oe=66370C30" alt="" /></a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/434018497_445043231336465_3773908934424893676_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEo_QLlWpeJqUqSXqOuhQ5ZaSS1v85xR1tpJLW_znFHWyQFAB9R7rdr109hgVPbTwf-kBkJUztA6EbSVcEf4kr-&_nc_ohc=-x_QB2PzCaMAb6vhx_C&_nc_oc=AdgavqrhbUVtSpuXRx_pRt9GR38baXYuPaiWG-Y3UfhmE7V4PWJm3erlYON28CRlqBA&_nc_ht=scontent-mnl1-2.xx&oh=03_AdWiI0V_y04Ko5x1J8SdfDKwzAJ9bZL6WOWcrc3bN2qX6Q&oe=663704ED" alt="" /></a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit"><img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/434063468_382562988012477_6916567424215068108_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGJzYpj8qs1NpWcgVpgaPIEIrX24HRTrRkitfbgdFOtGU6xHUQFfOfKGtHoJBjvbm2HxmbMDP9cLkqhWjz8zCss&_nc_ohc=oYqvG_8aNEwAb45iPtr&_nc_ht=scontent-mnl1-2.xx&oh=03_AdV-Y8XzvGvTDIJHVOXgsIUIxOoqLSxt28L1tTvama-L-w&oe=6636EC6B" alt="" /></a>
+										</div>
+								
+									</div>
+								</section>
+							</center>
+
+						</div>
+						<hr />
+						
+						<div class="row">
+							<div class="col-12">
+								
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>That's all and thank you!!!</h3>
+										</header>
+										<p>Please contact us for more infos and feedbacks.</p>
+										<ul class="icons">
+											<li><a href="https://twitter.com/?lang=en" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/profile.php?id=100081336742141" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://www.instagram.com/matthheeeww__/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; ACCO. All rights reserved. Group 3</li><li></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
